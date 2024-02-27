@@ -1,5 +1,5 @@
 const express = require('express')
-const zod = rtequire('zod');
+const zod = require('zod');
 const jwt = require('jsonwebtoken');
 const JWT_SECRET = require('./config');
  const router = express.Router();
