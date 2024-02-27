@@ -8,32 +8,32 @@ const mongoose = require('mongoose')
      unique:true,
      trim:true,
      lowerCase:true,
-     maxlength:30,
-     minlength:5
+     maxLength:30,
+     minLength:5
    },
     password:{
      type: String,
      required:true,
-     unique:true,
-     maxlength:20,
-     minlength:5,
+     
+     minLength:6,
 
    },
     firstname:{
       type:String,
       required:true,
-      unique:true,
-      maxlength:20,
-      minlength:5,
+      maxLength:20,
+      
     },
     lastname:{
       type:String,
       required:true,
-      unique:true,
-      maxlength:20,
-      minlength:5,
+      trim:true,
+      maxLength:50,
+
     }
- })
+ });
+
+ 
 
  const User =mongoose.model("User",userSchema);
  module.export={
