@@ -1,2 +1,2 @@
-const JWT_SECRET ="sangeeta"
+const JWT_SECRET = 'sangeeta'
 module.exports = JWT_SECRET
